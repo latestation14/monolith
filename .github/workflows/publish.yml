@@ -43,7 +43,7 @@ jobs:
     - name: Publish version
       run: Tools/publish_multi_request.py
       env:
-        PUBLISH_TOKEN: ${{ secrets.ORG_PUBLISH_TOKEN }}
+        PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
     # - name: Publish changelog (Discord)
